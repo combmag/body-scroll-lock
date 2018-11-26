@@ -141,7 +141,9 @@
             }
 
             // Do not prevent if the event has more than one touch (usually meaning this is a multi touch gesture like pinch to zoom)
-            if (e.touches.length > 1) return true;
+
+            // Removed this line since multi gesture breaks some part of the site
+            // if (e.touches.length > 1) return true;
 
             if (e.preventDefault) e.preventDefault();
 
